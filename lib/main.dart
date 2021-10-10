@@ -14,14 +14,179 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'MyApp',
       home: Scaffold(
-          appBar: AppBar(
-            title: const Text('MyApp'),
-          ),
-          body: Image.asset('assets/images/flower.jpg')
-          // body: Image.asset('assets/images/flower.jpg')
-          ),
+        appBar: AppBar(
+          title: Text("MyApp"),
+        ),
+        body: Column(
+          children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Container(
+                  alignment: Alignment.center,
+                  child: Text("Berita Baru",
+                      style: TextStyle(fontSize: 20, color: Colors.black)),
+                  margin: EdgeInsets.only(top: 20),
+                ),
+                Container(
+                  alignment: Alignment.center,
+                  child: Text("Berita Musim Bunga",
+                      style: TextStyle(fontSize: 20, color: Colors.black)),
+                  margin: EdgeInsets.only(top: 20),
+                ),
+              ],
+            ),
+            Column(
+              children: [
+                Container(
+                    margin: EdgeInsets.only(
+                      top: 20,
+                    ),
+                    height: 120,
+                    width: 400,
+                    alignment: Alignment.topCenter,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.purple,
+                        width: 2,
+                      ),
+                    ),
+                    child: Column(
+                      children: [
+                        Image.asset(
+                          'assets/images/flower.jpg',
+                          width: 400,
+                          height: 95,
+                          fit: BoxFit.fill,
+                        ),
+                        Text(
+                            "Merupakan Bunga Yang Paling Banyak DiCari Di Musim Ini"),
+                      ],
+                    )),
+                Container(
+                    color: Colors.purple,
+                    alignment: Alignment.center,
+                    height: 40,
+                    width: 400,
+                    child: Row(
+                      children: [
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          margin: EdgeInsets.all(5),
+                          child: Text("Bunga Import",
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.black)),
+                        ),
+                      ],
+                    )),
+                Container(
+                    margin: EdgeInsets.only(
+                      top: 20,
+                    ),
+                    height: 80,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/flower.jpg',
+                          width: 120,
+                          height: 80,
+                          alignment: Alignment.topLeft,
+                          fit: BoxFit.fill,
+                        ),
+                        Container(
+                          alignment: Alignment.centerRight,
+                          margin: EdgeInsets.all(5),
+                          child: Text("Bunga Langka Di Musim Ini ",
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.black)),
+                        ),
+                      ],
+                    )),
+                Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    height: 40,
+                    width: 400,
+                    child: Row(
+                      children: [
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          margin: EdgeInsets.all(5),
+                          child: Text("Bunga Langka Di Musim Ini",
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.black)),
+                        ),
+                      ],
+                    )),
+                Container(
+                    margin: EdgeInsets.only(
+                      top: 20,
+                    ),
+                    height: 80,
+                    width: 400,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    child: Row(
+                      children: [
+                        Image.asset(
+                          'assets/images/flower.jpg',
+                          width: 120,
+                          height: 80,
+                          alignment: Alignment.topLeft,
+                          fit: BoxFit.fill,
+                        ),
+                        Container(
+                          alignment: Alignment.centerRight,
+                          margin: EdgeInsets.all(5),
+                          child: Text("Bunga Langka Di Musim Ini ",
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.black)),
+                        ),
+                      ],
+                    )),
+                Container(
+                    alignment: Alignment.center,
+                    decoration: BoxDecoration(
+                      border: Border.all(
+                        color: Colors.grey,
+                        width: 2,
+                      ),
+                    ),
+                    height: 40,
+                    width: 400,
+                    child: Row(
+                      children: [
+                        Container(
+                          alignment: Alignment.centerLeft,
+                          margin: EdgeInsets.all(5),
+                          child: Text("Bunga Langka Di Musim Ini",
+                              style:
+                                  TextStyle(fontSize: 15, color: Colors.black)),
+                        ),
+                      ],
+                    )),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
